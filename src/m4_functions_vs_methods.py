@@ -256,8 +256,16 @@ def try_methods_and_functions():
     shaun.speed = 5
     shaun.pen = rg.Pen('red', 5)
     draw_many_squares(shaun, 10, 50, 15)
+
+    shaun.speed = 100
+    shaun.pen = rg.Pen('red', 35)
+    draw_many_squares(shaun, 8, 300, 60)
+    shaun.pen = rg.Pen('black', 3)
+    shaun.backward(200)
+    shaun.draw_circle(30)
+    shaun.draw_square(50)
     ####################################################################
-    # TODO: 5. Implement this function, per its doc-string above.
+    # Done: 5. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
